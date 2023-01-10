@@ -1,6 +1,6 @@
 Package: outerPkg
 Title: Dummy Package That Depends On innerPkg
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Daniel", "Gealow", email = "dgealow@paradigm4.com", role = c("aut", "cre"))
 Description: This is a dummy package that imports a function from innerPkg. It's
@@ -13,3 +13,5 @@ Imports:
     innerPkg (>= 0.1.0)
 Remotes: 
     dvg-p4/innerPkg
+URL: https://github.com/dvg-p4/outerPkg
+BugReports: https://github.com/dvg-p4/outerPkg/issues
