@@ -1,12 +1,15 @@
 Package: outerPkg
-Title: What the Package Does (One Line, Title Case)
+Title: Dummy Package That Depends On innerPkg
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Daniel", "Gealow", email = "dgealow@paradigm4.com", role = c("aut", "cre"))
+Description: This is a dummy package that imports a function from innerPkg. It's
+    part of a reprex for an renv bug (https://github.com/rstudio/renv/issues/736).
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
+Imports: 
+    innerPkg (>= 0.1.0)
+Remotes: 
+    dvg-p4/innerPkg
